@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Poppins", sans-serif;
+    /* background-color: blue; */
+}
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 2840px; */
+    /* background-color: red; */
+    border: border-box;
+}
+.navbar{
+    height: 100px;
+    margin: 0 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: 700;
+    color: rgb(53, 53, 53);
+}
+.links{
+    display: flex;
+    /* gap: 0.5rem; */
+}
+.nav-links{
+    height: 2.5rem;
+    width: 8.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+}
+.links a{
+    text-decoration: none ;
+    color: rgb(0, 0, 0);
+    padding: 0 10px;
+    font-size: 14px;
+}
+.nav-links:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    transition: ease-in 0.2s;
+    padding: 0 10px;
+    box-shadow: none;
+}
+.nav-links a:hover{
+    color: rgb(255, 255, 255);
+    transition: ease-in 0.2s;
+    padding: 0 10px;
+}
+.content{
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: 90vw;
+    height: 78vh;
+    /* background-color: teal; */
+}
+.element{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.images-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* .images{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.image-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+#imgOne{
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#imgTwo{
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#imgThree{
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#imgOne .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#imgTwo .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#imgThree .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/* .images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+} */
+
+/* -----------Text from here----------- */
+.text{
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    top: 200px;
+    left: 40px;
+    color: white;
+    /* background-color: green; */
+    font-size: 1.8vmax;
+    overflow: hidden;
+}
+#titleOne{
+    position: absolute;
+    top: 67px;
+}
+#titleTwo{
+    position: absolute;
+    top: 67px;
+}
+#titleThree{
+    position: absolute;
+    top: 67px;
+}
+/* ---------------------------Section About us------------------------- */
+.center{
+    text-align: center;
+}
+.about{
+    /* margin: 30px 00; */
+    width: 100%;
+    font-size: 2.5rem;
+    /* background-color: violet; */
+
+}
+.about-heading{
+    /* padding: 30px 0; */
+    width: 100%;
+    font-size: 2.5rem;
+    /* background-color: aqua; */
+}
+.about-para{
+    /* padding: 0 00px; */
+    font-size: 1.5rem;
+    width: 100%;
+    /* background-color: green ; */
+}
+.main-heading{
+    width: 100%;
+    /* height: 20vh; */
+    margin-top: 20px;
+    /* height: 30vmax; */
+    /* background-color: rgb(137, 112, 137); */
+    /* border: 1px slateblue solid; */
+}
+.about-content{
+    width: 100%;
+    margin-top: 8vh;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* border: 1px rgb(90, 205, 126) solid; */
+}
+.about-left{
+    width: 45%;
+    /* height: 30vmax; */
+    /* border: 1px slateblue solid; */
+}
+.about-right{
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 45%;
+    /* height: 30vmax; */
+    /* overflow: auto; */
+    /* border: 1px slateblue solid; */
+}
+
+.my-photo{
+    border-radius: 50px;
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px slateblue solid; */
+}
+.my-photo img{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    scale: 1;
+    object-fit: cover;
+    /* background-color: aqua; */
+    /* border: 1px slateblue solid; */
+}
+
+/* ---------------------------Section Work Experience------------------------- */
+
+.experience{
+    padding: 50px 0;
+    width: 100%;
+    /* height: 50vw; */
+    /* background-color: #a9a4a4; */
+}
+.experience-heading{
+    padding: 50px 0;
+    font-size: 3rem;
+}
+.experience-para{
+    padding: 0 40px;
+    font-size: 1.4rem;
+}
+/* ---------------------------Section Technologies------------------------- */
+/* .technologies{
+    padding: 0px 0;
+} */
+.technologies-heading{
+    padding: 20px 0;
+    font-size: 3rem;
+
+}
+.technologies-para{
+    margin-bottom: 50px;
+}
+.desc-exp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.tools{
+    display: flex;
+    width: 90vw;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+
+}
+.left-tools{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    border-radius: 50px;
+    background-color: rgb(147, 147, 168);
+}
+.left-left-tool{
+    width: 40%;
+}
+
+.left-left-tool ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding-top: 10px;
+
+}
+.left-right-tool ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+.tools-logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+    border-radius: 10px;
+    padding: 10px;
+}
+.left-tools-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: rgb(180, 186, 180);
+    padding: 30px 0;
+    border-radius: 20px;
+}
+
+.tools-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.tools-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------------Projects Section---------------- */
+.projects{
+    margin: 10px 0;
+}
+.project-heading{
+    font-size: 3rem;
+}
+.project-cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project-cards a{
+    text-decoration:none;
+    color: white;
+}
+.card{
+    margin-top: 30px;
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+}
+.card-img{
+    border-radius: 30px 30px 0 0;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(169, 166, 166);
+}
+
+.card-img img{
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1;
+    transition: all ease-out 0.2s;
+
+}
+.card-img img:hover{
+    scale: 1.1;
+}
+.card-desc{
+    border-radius: 0px 0 30px 30px;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 207, 83);
+    color: rgb(20, 19, 19);
+
+}
+
+/* --------------------Footer Area Start from here------------- */
+.footer-area{
+    /* background-color: rgb(219, 196, 137); */
+    background: rgb(237,232,51);
+    background: linear-gradient(49deg, rgba(237,232,51,0) 0%, rgba(237,232,51,1) 30%, rgba(237,232,51,1) 70%, rgba(237,232,51,0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+/* --------------Media Query Start from here - Making Resposive----------  */
+@media (min-width: 1024px) {
+        
+    .text{
+        position: absolute;
+        width: 70%;
+        height: 4vw;
+        top: 200px;
+        left: 10px;
+        color: white;
+        /* background-color: green; */
+        font-size: 1.5vmax;
+        overflow: hidden;
+    }
+    #titleOne{
+        position: absolute;
+        top: 75px;
+    }
+    #titleTwo{
+        position: absolute;
+        top: 75px;
+    }
+    #titleThree{
+        position: absolute;
+        top: 75px;
+    }
+}
+@media (max-width: 1024px) {
+        
+    .text{
+        position: absolute;
+        width: 90%;
+        height: 8%;
+        top: 200px;
+        left: 10px;
+        color: white;
+        /* background-color: green; */
+        font-size: 1.5vmax;
+        overflow: hidden;
+    }
+    #titleOne{
+        position: absolute;
+        top: 75px;
+    }
+    #titleTwo{
+        position: absolute;
+        top: 75px;
+    }
+    #titleThree{
+        position: absolute;
+        top: 75px;
+    }
+}
+@media (max-width: 1024px) {
+    .main-heading{
+        margin-bottom: 20px;
+    }
+    .about-content{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-left{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-left h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+   
+}
+
+@media (max-width: 850px) {
+    .navbar{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    .element{
+        margin-top: 20px;
+        width: 100%;
+        height: 50%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .main-heading{
+        margin-bottom: 20px;
+    }
+    .about-content{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-left{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .experience{
+        padding: 10px;
+    }
+    .experience-heading{
+        padding-bottom: 10px;
+
+    }
+    .technologies-heading{
+        padding-bottom: 10px;
+
+    }
+    .technologies-para{
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .main-heading{
+        margin-bottom: 20px;
+    }
+    .about-content{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-left{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-left h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+   
+}
+@media (max-width: 550px) {
+    .about-para{
+        text-align: left;
+    }
+    .links{
+        flex-direction: column;
+        gap: 15px;
+
+    }
+    .element{
+        margin-top: 120px;
+    }
+    .about{
+        margin: 0;
+    }
+    .main-heading h1{
+        font-size: 4rem;
+    }
+    .left-tools{
+        flex-direction: column;
+    }
+    .left-left-tool{
+        width: 100%;
+    }
+    .left-left-tool ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-right-tool{
+        width: 100%;
+    }
+    .left-right-tool ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .desc-exp{
+        margin-top: 30px;
+    }
+    .tools{
+        margin-top: 50px;
+    }
+    
+}
+@media (max-width: 450px) {
+        
+    .text{
+        position: absolute;
+        width: 100%;
+        height: 11.5%;
+        top: 200px;
+        left: 10px;
+        color: white;
+        /* background-color: green; */
+        font-size: 1.5vmax;
+        overflow: hidden;
+    }
+    #titleOne{
+        position: absolute;
+        top: 75px;
+    }
+    #titleTwo{
+        position: absolute;
+        top: 75px;
+    }
+    #titleThree{
+        position: absolute;
+        top: 75px;
+    }
+}
+@media (max-width: 360px) {
+    .main-heading h1{
+        font-size: 3rem;
+        }
+    .about-left h2{
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .about-para{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .left-tools-logo{
+        
+        gap: 10px;
+    }
+    .tools-img{
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+    }
+    .tools-img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card{
+        margin-top: 10px;
+        width: 200px;
+        height: 250px;
+        border-radius: 30px;
+    }
+    
+    
+}
+
+
+
